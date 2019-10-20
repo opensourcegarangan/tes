@@ -15,7 +15,7 @@ html {
       -ms-text-size-adjust: 100%;
 }
 
-body {background-color: lightblue;
+body {
 margin: 0;
 }
 
@@ -265,7 +265,7 @@ a:active {
   left: 0;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: #fff;
+  background-color: #eee;
 }
 
 .content > * {
