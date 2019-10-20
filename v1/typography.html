@@ -1,7 +1,33 @@
 
-<header></header>
-  <br/>
-<br/>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ratchet template page</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/garangan.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="js/garangan.js"></script>
+  </head>
+  <body>
+    
+    <header class="bar bar-nav">
+  <a class="icon icon-home pull-left">
+  
+  </a>
+  <a class="icon icon-more-vertical pull-right">
+   
+  </a>
+  <h1 class="title">Garangan</h1>
+</header>
 <div class="content">
       <p class="content-padded">Thanks for downloading Ratchet. This is an example HTML page that's linked up to compiled Ratchet CSS and JS, has the proper meta tags and the HTML structure. Need some more help before you start filling this with your own content? Check out some Ratchet resources:</p>
   
@@ -35,21 +61,4 @@
 
 </xmp>
 
-<footer></footer>
-<script>
-  fetch("header.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("header").innerHTML = data;
-  });
-
-fetch("footer.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("footer").innerHTML = data;
-  });
-</script>
+</body></html>
