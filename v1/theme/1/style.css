@@ -1,0 +1,38 @@
+/* page fix */
+.content {
+    padding-bottom: 50px;
+}
+.modal .content-padded {
+    padding-top: 40px;
+}
+/* android fix */
+h1.title {
+    text-align: center;
+}
+.popover {
+    width: 280px;
+    left: 50%;
+    margin-left: -140px;
+}
+.bar-tab {
+    top: auto;
+    bottom: 0;
+}
+/* gotop */
+#gotop .icon{
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    z-index: 10;
+    opacity: 0.8;
+    color: #666;
+}

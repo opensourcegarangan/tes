@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Ratchet Sample</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ratchet template page</title>
+
+        <!-- Sets initial viewport load and disables zooming    -->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+        <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <!-- Include the compiled Ratchet CSS -->
+        <link href="//cdnjs.cloudflare.com/ajax/libs/ratchet/2.0.2/css/ratchet.min.css" rel="stylesheet">
+        <link id="theme" href="" rel="stylesheet">
+        <!-- 
+        <link href="//cdnjs.cloudflare.com/ajax/libs/ratchet/2.0.2/css/ratchet-theme-android.min.css" rel="stylesheet">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/ratchet/2.0.2/css/ratchet-theme-ios.min.css" rel="stylesheet">
+         -->
+		<!-- Include the CSS plugins -->
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/snap.js/1.9.3/snap.min.css">
+		<link rel="stylesheet" href="/assets/css/common.css">
+    </head>
+    <body class="animsition">
+		<div id="content" class="snap-content">
+			<!-- Make sure all your bars are the first things in your <body> -->
+			<header class="bar bar-nav">
+				<a id="toggle-left" class="icon icon-bars pull-left"></a>
+				<a id="toggle-right" class="icon icon icon-more-vertical pull-right"></a>
+				<a href="#myPopover"><h1 class="title">Ratchet<span class="icon icon-caret"></span></h1></a>
+			</header>
+		
+			<div class="content">
+				<div class="segmented-control">
+					<a id="base" class="control-item active">Base</a>
+					<a id="ios" class="control-item">iOS</a>
+					<a id="android" class="control-item">Android</a>
+				</div>
+				<h1>Ratchet</h1>
+				<p>
+					この画面は、スマートフォンに特化したBootstrap系のCSSフレームワーク、Ratchet（ラチェット）を使用しています。<br />
+				</p>
+				<div class="card">
+					<ul class="table-view">
+						<li class="table-view-divider">Ratchet</li>
+						<li class="table-view-cell media">
+							<a class="navigate-right" href="http://goratchet.com/" data-ignore="push">
+								<div class="media-body">
+									<p>
+										Version：2.0.2<br />
+										スマートフォン用のデザインが簡単に作成できます。<br />
+										デザインは標準、iOS、Androidの3つが用意されています。<br />
+									</p>
+								</div>
+							</a>
+						</li>
+						<li class="table-view-cell">
+							<a class="navigate-right" href="https://cdnjs.com/libraries/ratchet" data-ignore="push">Ratchet CDN</a>
+						</li>
+					</ul>
+				</div>
+     <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+    <script>
+      function init() {
+        map = new OpenLayers.Map("basicMap");
+        var mapnik = new OpenLayers.Layer.OSM();
+        map.addLayer(mapnik);
+        map.setCenter(new OpenLayers.LonLat(13.41,52.52) // Center of the map
+          .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            new OpenLayers.Projection("EPSG:900913") // to Spherical Mercator Projection
+          ), 15 // Zoom level
+        );
+      }
+    </script>
+  </head>
+  <body onload="init();">
+    <div id="basicMap"></div>
+        
+				<div class="card">
+					<ul class="table-view">
+						<li class="table-view-divider">jQuery</li>
+						<li class="table-view-cell media">
+							<a class="navigate-right" href="https://jquery.com/" data-ignore="push">
+								<div class="media-body">
+									<p>
+										Version：Latest(3.1.1)<br />
+										定番のJavaScriptフレームワークです。<br />
+										今回はバージョン3系を使用してみました。<br />
+									</p>
+								</div>
+							</a>
+						</li>
+						<li class="table-view-cell">
+							<a class="navigate-right" href="https://code.jquery.com/" data-ignore="push">jQuery CDN</button></a>
+						</li>
+					</ul>
+				</div>
+				<div class="card">
+					<ul class="table-view">
+						<li class="table-view-divider">Snap.js</li>
+						<li class="table-view-cell media">
+							<a class="navigate-right" href="http://jakiestfu.github.io/Snap.js/demo/apps/default.html" data-ignore="push">
+								<div class="media-body">
+									<p>
+										Version：1.9.3<br />
+										スライドメニューが表示できるjQueryのプラグインです。<br />
+										ボタン、ドラック両方に対応しています。<br />
+									</p>
+								</div>
+							</a>
+						</li>
+						<li class="table-view-cell">
+							<a class="navigate-right" href="https://cdnjs.com/libraries/snap.js/" data-ignore="push">Snap.js CDN</button></a>
+						</li>
+					</ul>
+				</div>
+	
+				<h1>H1 Sample</h1>
+				<h2>H2 Sample</h2>
+				<h3>H3 Sample</h3>
+				<h4>H4 Sample</h4>
+				<h5>H5 Sample</h5>
+				<h6>H6 Sample</h6>
+				<p>
+					Ratchetを使ったHTMLサンプルです。<br />
+				</p>
+	
+				<ul class="table-view">
+					<li class="table-view-divider">アイコン＋バッジ＋右矢印のリスト</li>
+					<li class="table-view-cell">
+						<a class="navigate-right animsition-link" href="index2.html" data-ignore="push">
+							<span class="media-object pull-left icon icon-trash"></span>
+							<span class="badge badge-primary">1</span>
+							Item 1
+						</a>
+					</li>
+					<li class="table-view-cell">
+						<a class="navigate-right" href="index2.html">
+							<span class="media-object pull-left icon icon-gear"></span>
+							<span class="badge badge-positive">3</span>
+							Item 2
+						</a>
+					</li>
+					<li class="table-view-cell">
+						<a class="navigate-right">
+							<span class="media-object pull-left icon icon-pages"></span>
+							<span class="badge badge-negative">5</span>
+							Item 3
+						</a>
+					</li>
+					<li class="table-view-divider">ボタンリスト</li>
+					<li class="table-view-cell">Item 1 <button class="btn"><span class="icon icon-gear"></span> Button <span class="badge">1</span></button></li>
+					<li class="table-view-cell">Item 2 <button class="btn btn-primary"><span class="icon icon-search"></span> Button <span class="badge badge-primary">2</span></button></li>
+					<li class="table-view-cell">Item 3 <button class="btn btn-positive"><span class="icon icon-search"></span> Button <span class="badge badge-positive">3</span></button></li>
+					<li class="table-view-cell">Item 4 <button class="btn btn-negative"><span class="icon icon-left"></span> Button <span class="badge badge-negative">4</span></button></li>
+					<li class="table-view-divider">ボタンリスト2</li>
+					<li class="table-view-cell">Item 1 <button class="btn btn-outlined"><span class="icon icon-gear"></span> Button <span class="badge">1</span></button></li>
+					<li class="table-view-cell">Item 2 <button class="btn btn-outlined btn-primary"><span class="icon icon-search"></span> Button <span class="badge badge-primary">2</span></button></li>
+					<li class="table-view-cell">Item 3 <button class="btn btn-outlined btn-positive"><span class="icon icon-search"></span> Button <span class="badge badge-positive">3</span></button></li>
+					<li class="table-view-cell">Item 4 <button class="btn btn-outlined btn-negative"><span class="icon icon-left"></span> Button <span class="badge badge-negative">4</span></button></li>
+					<li class="table-view-divider">トグルボタンのリスト</li>
+					<li class="table-view-cell">Item 1<div class="toggle"><div class="toggle-handle"></div></div></li>
+					<li class="table-view-cell">Item 2<div class="toggle active"><div class="toggle-handle"></div></div></li>
+				</ul>
+				<a href="#myModalexample" class="btn btn-block">モーダルを開く</a>
+				<ul class="table-view">
+					<li class="table-view-divider">メディアリスト</li>
+					<li class="table-view-cell media">
+						<a class="navigate-right">
+							<img class="media-object pull-left" src="http://placehold.it/42x42">
+							<div class="media-body">
+								Item 1
+								<p>Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+							</div>
+						</a>
+					</li>
+					<li class="table-view-cell media">
+						<a class="navigate-right">
+							<img class="media-object pull-left" src="http://placehold.it/42x42">
+							<div class="media-body">
+								Item 2
+								<p>Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+							</div>
+						</a>
+					</li>
+					<li class="table-view-cell media">
+						<a class="navigate-right">
+							<img class="media-object pull-left" src="http://placehold.it/42x42">
+							<div class="media-body">
+								Item 3
+								<p>Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="table-view">
+					<li class="table-view-divider">タブメニュー</li>
+				</ul>
+				<div class="segmented-control">
+					<a class="control-item active" href="#item1mobile">Thing one</a>
+					<a class="control-item" href="#item2mobile">Thing two</a>
+					<a class="control-item" href="#item3mobile">Thing three</a>
+				</div>
+				<div class="table-view">
+					<span id="item1mobile" class="control-content table-view-cell media active">
+						<a class="navigate-right">
+							<img class="media-object pull-left" src="http://placehold.it/42x42">
+							<div class="media-body">
+								Item 1
+								<p>Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+							</div>
+						</a>
+					</span>
+					<span id="item2mobile" class="control-content table-view-cell">
+						Item 2
+						<p>Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+					</span>
+					<span id="item3mobile" class="control-content">
+						<p>公式サンプルではcardですが、table-viewの方が見やすいです。</p>
+					</span>
+				</div>
+				<ul class="table-view">
+					<li class="table-view-divider">フォーム</li>
+				</ul>
+				<form>
+					<input type="search" placeholder="Search">
+				</form>
+				<form class="input-group" action="index2.html" method="get">
+					<input type="text" placeholder="Mister Ratchet">
+					<div class="input-row">
+						<label>Email</label>
+						<input type="email" name="email" placeholder="ratchetframework@gmail.com">
+					</div>
+					<textarea name="textarea" rows="5"></textarea>
+					<button type="submit" class="btn btn-positive btn-block">Choose existing</button>
+				</form>
+			</div>
+		</div>
+		
+		<div id="myModalexample" class="modal">
+			<header class="bar bar-nav">
+				<a class="icon icon-close pull-right" href="#myModalexample"></a>
+				<h1 class="title">Modal</h1>
+			</header>
+			<p class="content-padded">The contents of my modal go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+		</div>
+
+		<!-- Popover -->
+		<div id="myPopover" class="popover">
+			<header class="bar bar-nav">
+				<h1 class="title">Popover title</h1>
+			</header>
+			<ul class="table-view">
+				<li class="table-view-cell">Item1</li>
+				<li class="table-view-cell">Item2</li>
+				<li class="table-view-cell">Item3</li>
+				<li class="table-view-cell">Item4</li>
+				<li class="table-view-cell">Item5</li>
+				<li class="table-view-cell">Item6</li>
+				<li class="table-view-cell">Item7</li>
+				<li class="table-view-cell">Item8</li>
+			</ul>
+		</div>
+    
+		<!-- Sidebar -->
+		<div class="snap-drawers">
+			<div class="snap-drawer snap-drawer-left" id="left-drawer">
+				<ul class="table-view">
+					<li class="table-view-divider">左メニュー</li>
+					<li class="table-view-cell">List item 1 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 2 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 3 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 4 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 5 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 6 <span class="chevron"></span></li>
+				</ul>
+			</div>
+			<div class="snap-drawer snap-drawer-right" id="right-drawer">
+				<ul class="table-view">
+					<li class="table-view-divider">右メニュー</li>
+					<li class="table-view-cell">List item 1 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 2 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 3 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 4 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 5 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 6 <span class="chevron"></span></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<nav class="bar bar-tab">
+			<a class="tab-item active" href="#">
+				<span class="icon icon-home"></span>
+				<span class="tab-label">Home</span>
+			</a>
+			<a class="tab-item" href="#">
+				<span class="icon icon-person"></span>
+				<span class="tab-label">Profile</span>
+			</a>
+			<a class="tab-item" href="#">
+				<span class="icon icon-star-filled"></span>
+				<span class="tab-label">Favorites</span>
+			</a>
+			<a class="tab-item" href="#">
+				<span class="icon icon-search"></span>
+				<span class="tab-label">Search</span>
+			</a>
+			<a class="tab-item" href="#">
+				<span class="icon icon-gear"></span>
+				<span class="tab-label">Settings</span>
+			</a>
+		</nav>
+		<div id="gotop">
+			<span class="icon icon-up-nav"></span>
+		</div>
+        <!-- Include the compiled Ratchet JS -->
+        <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ratchet/2.0.2/js/ratchet.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/snap.js/1.9.3/snap.min.js"></script>
+		<script src="/assets/js/common.js"></script>
+    </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
